@@ -1,0 +1,19 @@
+{
+  "name": "glsl-vue-loader",
+  "version": "0.5.0",
+  "description": "Load shader code to vue component",
+  "main": "src/loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wintercn/glsl-vue-loader.git"
+  },
+  "author": "winter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wintercn/glsl-vue-loader/issues"
+  },
+  "homepage": "https://github.com/wintercn/glsl-vue-loader#readme"
+}
