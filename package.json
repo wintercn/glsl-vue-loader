@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wintercn/glsl-vue-loader/issues"
   },
-  "homepage": "https://github.com/wintercn/glsl-vue-loader#readme"
+  "homepage": "https://github.com/wintercn/glsl-vue-loader#readme",
+  "devDependencies": {
+    "@webpack-cli/serve": "^0.1.8"
+  }
 }

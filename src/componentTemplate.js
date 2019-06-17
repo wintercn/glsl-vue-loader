@@ -1,6 +1,15 @@
 module.exports = (vertexShader, fragmentShader, watchers, properties) => `
-export default Vue.component('draw', {
-  template:'<canvas ref="canvas" v-bind:width="width" v-bind:height="height"></canvas>',
+export default {
+  render:function(createElement){
+    return createElement('canvas', {
+        ref: 'canvas',
+        attrs: {
+            width: this.$props['width'],
+            height: this.$props['height']
+        }
+    });
+  },
+  //template:'<canvas ref="canvas" v-bind:width="width" v-bind:height="height"></canvas>',
   name: 'webgl-renderer',
   props: {
     width: String,
@@ -81,5 +90,5 @@ ${fragmentShader}
     gl.drawArrays(gl.TRIANGLE_STRIP, this.$props['indicesStart'], this.$props['indicesCount']);
     //gl.drawArrays(gl.POINTS, 0, 3);
   }
-})
+}
 `;

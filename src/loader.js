@@ -2,8 +2,6 @@ var fs = require('fs');
 
 module.exports = function (fragmentShaderSource, map) {
     var t = require('./componentTemplate.js')
-    console.log(this.resourcePath);
-
     var hasVertexShader = false;
     try {
         var vertexShaderSource = fs.readFileSync(this.resourcePath.replace(/.frag$/, ".vert2"), 'utf8');
