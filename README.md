@@ -6,13 +6,19 @@ Uniforms will be automatically converted to Vue.js property.
 
 ## Quick glimpse
 
+At root directory:
+
+```shell
+npm i
+```
+
 Go to the samples folder, run the following command:
 
 ```shell
-webpack
+node ../../node_modules/.bin/webpack
 ```
 
-You will get `./samples/dist/main.js`, It is a Vue.js component.
+You will get `./samples/dist/main.js`, where the glsl source code has been bundled in.
 
 Then open `./samples/draw.html`, you will see a graph rendered by webgl.
 
